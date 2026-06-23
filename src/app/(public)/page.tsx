@@ -830,9 +830,9 @@ export default function HomePage() {
               Frequently asked questions
             </h2>
           </div>
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion openMultiple={false} className="w-full">
             {FAQS.map((faq, i) => (
-              <AccordionItem key={i} value={`faq-${i}`}>
+              <AccordionItem key={i} value={i}>
                 <AccordionTrigger className="text-left text-base font-medium hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
