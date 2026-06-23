@@ -207,10 +207,8 @@ export default function HomePage() {
           </div>
 
           <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-            <SheetTrigger asChild className="md:hidden">
-              <Button variant="ghost" size="icon">
-                <Menu className="h-5 w-5" />
-              </Button>
+            <SheetTrigger className="md:hidden" render={<Button variant="ghost" size="icon" />}>
+              <Menu className="h-5 w-5" />
             </SheetTrigger>
             <SheetContent side="right" className="w-72">
               <SheetHeader>
